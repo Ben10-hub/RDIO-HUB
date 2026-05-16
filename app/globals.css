@@ -1,0 +1,121 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* RDIO AI Brand Colors */
+  --navy: #021B4E;
+  --gold: #D4A937;
+  --gold-light: #F4E1A1;
+  --soft-bg: #F8FAFC;
+  --text-gray: #020617;
+  
+  /* Semantic tokens */
+  --background: #F8FAFC;
+  --foreground: #021B4E;
+  --card: #FFFFFF;
+  --card-foreground: #021B4E;
+  --popover: #FFFFFF;
+  --popover-foreground: #021B4E;
+  --primary: #021B4E;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F4E1A1;
+  --secondary-foreground: #021B4E;
+  --muted: #F1F5F9;
+  --muted-foreground: #0F172A;
+  --accent: #D4A937;
+  --accent-foreground: #021B4E;
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+  --border: #E2E8F0;
+  --input: #E2E8F0;
+  --ring: #D4A937;
+  --radius: 0.75rem;
+  
+  /* Status colors */
+  --status-open: #22C55E;
+  --status-closing: #EAB308;
+  --status-closed: #EF4444;
+}
+
+@theme inline {
+  --font-sans: 'Inter', 'Geist', system-ui, sans-serif;
+  --font-heading: 'Manrope', 'Geist', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', monospace;
+  
+  --color-navy: var(--navy);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-soft-bg: var(--soft-bg);
+  --color-text-gray: var(--text-gray);
+  
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  
+  --color-status-open: var(--status-open);
+  --color-status-closing: var(--status-closing);
+  --color-status-closed: var(--status-closed);
+  
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    font-size: 18px;
+  }
+  body {
+    @apply bg-background text-foreground antialiased text-base leading-relaxed;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-navy font-heading font-semibold tracking-tight;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--soft-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--navy);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
