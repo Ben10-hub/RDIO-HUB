@@ -30,9 +30,9 @@ export default async function HomePage() {
       <main>
         <HeroSection />
         <TrustMarqueeSection />
+        <DomainsSection domains={domains} />
         <ProductSolutionsSection />
         <UpcomingEventsSection events={events} />
-        <DomainsSection domains={domains} />
         <WhyRdioSection />
         <ProjectsSection />
         <CollaborationSection />
