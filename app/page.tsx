@@ -4,9 +4,8 @@ import { HeroSection } from '@/components/sections'
 
 // Dynamically load below-the-fold sections to reduce initial bundle size
 const TrustMarqueeSection = dynamic(() => import('@/components/sections').then(mod => mod.TrustMarqueeSection))
-const ProductSolutionsSection = dynamic(() => import('@/components/sections').then(mod => mod.ProductSolutionsSection))
+const IntegratedSolutionsSection = dynamic(() => import('@/components/sections').then(mod => mod.IntegratedSolutionsSection))
 const UpcomingEventsSection = dynamic(() => import('@/components/sections').then(mod => mod.UpcomingEventsSection))
-const DomainsSection = dynamic(() => import('@/components/sections').then(mod => mod.DomainsSection))
 const WhyRdioSection = dynamic(() => import('@/components/sections').then(mod => mod.WhyRdioSection))
 const ProjectsSection = dynamic(() => import('@/components/sections').then(mod => mod.ProjectsSection))
 const CollaborationSection = dynamic(() => import('@/components/sections').then(mod => mod.CollaborationSection))
@@ -17,8 +16,7 @@ import { getDomains, getPrograms, getEvents, getGalleryImages } from '@/services
 
 export default async function HomePage() {
   // Fetch dynamic data from Google Sheets (with fallback)
-  const [domains, programs, events, gallery] = await Promise.all([
-    getDomains(),
+  const [programs, events, gallery] = await Promise.all([
     getPrograms(),
     getEvents(),
     getGalleryImages(),
@@ -30,8 +28,7 @@ export default async function HomePage() {
       <main>
         <HeroSection />
         <TrustMarqueeSection />
-        <DomainsSection domains={domains} />
-        <ProductSolutionsSection />
+        <IntegratedSolutionsSection />
         <UpcomingEventsSection events={events} />
         <WhyRdioSection />
         <ProjectsSection />
