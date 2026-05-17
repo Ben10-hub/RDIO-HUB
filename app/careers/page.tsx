@@ -22,9 +22,9 @@ export default function CareersPage() {
       <Navbar />
       <main>
         <CareersHeroSection />
-        <OpportunitiesSection />
         <ProgramsSection programs={FALLBACK_PROGRAMS} />
         <SocialProofSection />
+        <OpportunitiesSection />
         <CTASection />
       </main>
       <Footer />
