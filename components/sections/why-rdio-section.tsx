@@ -2,38 +2,28 @@
 
 import { motion } from 'framer-motion'
 import { SectionHeader } from '@/components/common'
-import { BookOpen, Briefcase, Code, Award, GraduationCap, Users } from 'lucide-react'
+import { BookOpen, Briefcase, Code, Award } from 'lucide-react'
 
 const features = [
   {
-    title: 'Practical Learning',
-    description: 'Move beyond theory with hands-on projects and case studies relevant to the industry.',
+    title: 'Innovation First',
+    description: 'We lead with cutting-edge technology and novel approaches to solve complex, real-world problems.',
     icon: Code,
   },
   {
-    title: 'Real Exposure',
-    description: 'Work on live scenarios that simulate actual workplace challenges.',
+    title: 'Research-Driven',
+    description: 'Every solution is backed by rigorous research, data analysis, and continuous learning.',
     icon: BookOpen,
   },
   {
-    title: 'Research Focus',
-    description: 'Engage in academic and corporate research to innovate and publish.',
+    title: 'Industry Ready',
+    description: 'Build solutions that enterprises trust and deploy today, not theoretical concepts.',
     icon: Award,
   },
   {
-    title: 'Expert Mentorship',
-    description: 'Learn directly from industry veterans and academic experts.',
-    icon: Users,
-  },
-  {
-    title: 'Premium Internships',
-    description: 'Gain valuable experience through our network of industry partners.',
+    title: 'End-to-End Solutions',
+    description: 'From concept to deployment, we handle architecture, development, and long-term support.',
     icon: Briefcase,
-  },
-  {
-    title: 'Industry Readiness',
-    description: 'Acquire the exact skills employers are looking for right now.',
-    icon: GraduationCap,
   },
 ]
 
@@ -48,9 +38,9 @@ export function WhyRdioSection() {
         className="container mx-auto px-4 lg:px-8 relative z-10"
       >
         <SectionHeader
-          label="Why Choose Us"
-          title="The RDIO AI Advantage"
-          description="We provide a comprehensive ecosystem designed to transform students into capable, industry-ready professionals."
+          label="Why Choose RDIO AI"
+          title="Why Organizations Choose RDIO AI"
+          description="Building intelligent systems, research-driven solutions, and future-ready technology through innovation and execution."
         />
 
         <motion.div 
