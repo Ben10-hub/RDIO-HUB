@@ -3,7 +3,9 @@ import { Navbar, Footer } from '@/components/layout'
 import { CareersHeroSection } from './components/careers-hero'
 import { OpportunitiesSection } from './components/opportunities-section'
 import { ProgramsSection } from './components/programs-section'
+import { SocialProofSection } from './components/social-proof-section'
 import { CTASection } from '@/components/sections'
+import { FALLBACK_PROGRAMS } from '@/data/programs'
 
 export const metadata: Metadata = {
   title: 'Careers | RDIO AI',
@@ -21,7 +23,8 @@ export default function CareersPage() {
       <main>
         <CareersHeroSection />
         <OpportunitiesSection />
-        <ProgramsSection />
+        <ProgramsSection programs={FALLBACK_PROGRAMS} />
+        <SocialProofSection />
         <CTASection />
       </main>
       <Footer />
