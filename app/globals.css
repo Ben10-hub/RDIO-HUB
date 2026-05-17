@@ -96,6 +96,43 @@
   }
 }
 
+@layer components {
+  /* Glassmorphism utilities */
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  .glass-lg {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  }
+  
+  /* Premium shadow utilities */
+  .shadow-premium-sm {
+    box-shadow: 0 2px 8px rgba(2, 27, 78, 0.08);
+  }
+  
+  .shadow-premium-md {
+    box-shadow: 0 4px 16px rgba(2, 27, 78, 0.12);
+  }
+  
+  .shadow-premium-lg {
+    box-shadow: 0 8px 24px rgba(2, 27, 78, 0.16);
+  }
+  
+  .shadow-premium-xl {
+    box-shadow: 0 12px 32px rgba(2, 27, 78, 0.2);
+  }
+  
+  /* Premium gradient utilities */
+  .gradient-premium {
+    background: linear-gradient(135deg, #021B4E 0%, #D4A937 100%);
+  }
+  
+  .gradient-premium-light {
+    background: linear-gradient(135deg, #F8FAFC 0%, #F4E1A1 100%);
+  }
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

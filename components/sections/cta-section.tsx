@@ -17,10 +17,10 @@ export function CTASection() {
           className="max-w-3xl mx-auto text-center"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 text-balance">
-            Ready to Upskill with <span className="text-gold">RDIO AI</span>?
+            Ready to Transform Your Business with <span className="text-gold">RDIO AI</span>?
           </h2>
           <p className="text-white/70 text-lg mb-10 max-w-xl mx-auto">
-            Join thousands of students and professionals who have transformed their careers with our industry-oriented programs.
+            Let&apos;s discuss how our AI, SaaS, and product engineering solutions can solve your most complex challenges and drive innovation.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button
@@ -29,7 +29,7 @@ export function CTASection() {
               className="bg-gold hover:bg-gold/90 text-navy font-semibold px-8 h-12 text-base gap-2"
             >
               <Link href="/contact">
-                Apply Now <ArrowRight size={18} />
+                Schedule Consultation <ArrowRight size={18} />
               </Link>
             </Button>
             <Button
@@ -38,8 +38,8 @@ export function CTASection() {
               variant="outline"
               className="bg-white border-white text-navy hover:bg-white/90 font-semibold px-8 h-12 text-base gap-2"
             >
-              <Link href="/collaboration">
-                Collaborate With Us <ArrowRight size={18} />
+              <Link href="/services">
+                Explore Our Services <ArrowRight size={18} />
               </Link>
             </Button>
           </div>

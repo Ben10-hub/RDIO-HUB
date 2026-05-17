@@ -2,11 +2,10 @@ import type { NavLink, Stat, ContactInfo, Founder, CollaborationType } from '@/t
 
 export const NAV_LINKS: NavLink[] = [
   { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Collaborate With Us', href: '/collaboration' },
+  { label: 'Services', href: '/services' },
   { label: 'Projects', href: '/projects' },
-  { label: 'Gallery', href: '/gallery' },
-  { label: 'Tech Events', href: '/tech-events' },
+  { label: 'Careers', href: '/careers' },
+  { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ]
 

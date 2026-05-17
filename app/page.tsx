@@ -3,6 +3,8 @@ import dynamic from 'next/dynamic'
 import { HeroSection } from '@/components/sections'
 
 // Dynamically load below-the-fold sections to reduce initial bundle size
+const TrustMarqueeSection = dynamic(() => import('@/components/sections').then(mod => mod.TrustMarqueeSection))
+const ProductSolutionsSection = dynamic(() => import('@/components/sections').then(mod => mod.ProductSolutionsSection))
 const SocialProofSection = dynamic(() => import('@/components/sections').then(mod => mod.SocialProofSection))
 const ProgramsSection = dynamic(() => import('@/components/sections').then(mod => mod.ProgramsSection))
 const UpcomingEventsSection = dynamic(() => import('@/components/sections').then(mod => mod.UpcomingEventsSection))
@@ -29,6 +31,8 @@ export default async function HomePage() {
       <Navbar />
       <main>
         <HeroSection />
+        <TrustMarqueeSection />
+        <ProductSolutionsSection />
         <SocialProofSection />
         <ProgramsSection programs={programs} />
         <UpcomingEventsSection events={events} />

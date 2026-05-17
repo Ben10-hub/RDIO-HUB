@@ -1,4 +1,6 @@
 export { HeroSection } from './hero-section'
+export { TrustMarqueeSection } from './trust-marquee-section'
+export { ProductSolutionsSection } from './product-solutions-section'
 export { StatsSection } from './stats-section'
 export { DomainsSection } from './domains-section'
 export { ProgramsSection } from './programs-section'

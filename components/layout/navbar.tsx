@@ -32,8 +32,8 @@ export function Navbar() {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         scrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-border'
-          : 'bg-transparent'
+          ? 'bg-background/80 backdrop-blur-xl shadow-lg border-b border-border/50'
+          : 'bg-transparent border-b border-transparent'
       )}
     >
       {/* Top Utility Bar */}
@@ -122,7 +122,7 @@ export function Navbar() {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.2 }}
-              className="lg:hidden overflow-hidden bg-white border-t border-border"
+              className="lg:hidden overflow-hidden bg-background/95 backdrop-blur-lg border-t border-border/50"
             >
               <div className="py-4 space-y-1">
                 {NAV_LINKS.map((link) => (

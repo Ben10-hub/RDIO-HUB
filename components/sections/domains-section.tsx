@@ -27,9 +27,9 @@ export function DomainsSection({ domains = FALLBACK_DOMAINS }: DomainsSectionPro
         className="container mx-auto px-4 lg:px-8"
       >
         <SectionHeader
-          label="Our Expertise"
-          title="Domains We Cover"
-          description="From foundational programming to cutting-edge AI technologies, we offer comprehensive training across multiple domains."
+          label="Core Competencies"
+          title="Enterprise Solutions We Deliver"
+          description="Comprehensive AI, SaaS, and product engineering solutions designed for enterprise-scale challenges and innovation."
         />
 
         <LayoutGroup>

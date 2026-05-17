@@ -20,10 +20,10 @@ export function Footer() {
               />
             </Link>
             <p className="text-gold font-medium text-sm tracking-wider mb-4">
-              WRITE • LEARN • INNOVATE • EXCEL
+              INNOVATE • BUILD • TRANSFORM
             </p>
             <p className="text-white/70 text-sm leading-relaxed">
-              Empowering students, colleges, and professionals with industry-oriented training and upskilling programs.
+              Enterprise AI solutions, SaaS platforms, and intelligent systems transforming businesses and driving innovation.
             </p>
           </div>
 

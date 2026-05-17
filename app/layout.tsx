@@ -17,22 +17,22 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: 'RDIO AI - Write • Learn • Innovate • Excel',
+    default: 'RDIO AI - Enterprise AI & SaaS Solutions',
     template: '%s | RDIO AI',
   },
-  description: 'Upskilling, internships, FDPs, research mentorship, and industry-oriented training for students, colleges, and professionals. Learn beyond classrooms with RDIO AI.',
+  description: 'Enterprise AI solutions, SaaS products, and IoT systems. AI agents, cloud solutions, and intelligent automation for enterprise clients. Leading product engineering and AI innovation.',
   keywords: [
-    'AI training',
-    'Machine Learning',
-    'Data Science',
-    'Internships',
-    'FDP',
-    'Faculty Development Program',
-    'Corporate Training',
-    'Upskilling',
-    'Research Mentorship',
-    'RDIO AI',
-    'Industry Training',
+    'AI solutions',
+    'Enterprise AI',
+    'SaaS products',
+    'IoT systems',
+    'AI agents',
+    'Product engineering',
+    'Cloud solutions',
+    'AI consulting',
+    'Digital transformation',
+    'Machine learning',
+    'Enterprise software',
   ],
   authors: [{ name: 'RDIO AI' }],
   creator: 'RDIO AI',
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     url: 'https://rdiohub.com',
     siteName: 'RDIO AI',
-    title: 'RDIO AI - Write • Learn • Innovate • Excel',
-    description: 'Upskilling, internships, FDPs, research mentorship, and industry-oriented training for students, colleges, and professionals.',
+    title: 'RDIO AI - Enterprise AI & SaaS Solutions',
+    description: 'Enterprise AI solutions, SaaS products, and intelligent systems for modern businesses. AI agents, cloud solutions, and digital innovation.',
     images: [
       {
         url: '/og-image.png',
@@ -56,8 +56,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'RDIO AI - Write • Learn • Innovate • Excel',
-    description: 'Upskilling, internships, FDPs, research mentorship, and industry-oriented training.',
+    title: 'RDIO AI - Enterprise AI & SaaS Solutions',
+    description: 'Enterprise AI solutions and intelligent systems for modern businesses.',
     images: ['/og-image.png'],
   },
   robots: {
@@ -92,8 +92,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${manrope.variable}`}>
-      <body className="font-sans bg-soft-bg">
+    <html lang="en" className={`${inter.variable} ${manrope.variable} bg-background`}>
+      <body className="font-sans bg-background">
         {children}
         <Chatbot />
         {process.env.NODE_ENV === 'production' && <Analytics />}
